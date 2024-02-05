@@ -1,0 +1,42 @@
+CREATE TABLE info_esp32.info_esp32_num1 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    count INT,
+    rssi_r1 FLOAT,
+    rssi_r2 FLOAT,
+    rssi_r3 FLOAT
+),
+info_esp32.info_esp32_num2 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    count INT,
+    rssi_r1 FLOAT,
+    rssi_r2 FLOAT,
+    rssi_r3 FLOAT
+),
+info_esp32.info_esp32_num3 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    count INT,
+    rssi_r1 FLOAT,
+    rssi_r2 FLOAT,
+    rssi_r3 FLOAT
+),
+info_esp32.info_esp32_num4 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    count INT,
+    rssi_r1 FLOAT,
+    rssi_r2 FLOAT,
+    rssi_r3 FLOAT
+),
+info_esp32.info_esp32_num5 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    count INT,
+    rssi_r1 FLOAT,
+    rssi_r2 FLOAT,
+    rssi_r3 FLOAT
+),
+info_esp32.info_esp32_num6 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    count INT,
+    rssi_r1 FLOAT,
+    rssi_r2 FLOAT,
+    rssi_r3 FLOAT
+);
