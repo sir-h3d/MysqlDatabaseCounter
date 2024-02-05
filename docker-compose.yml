@@ -14,5 +14,18 @@ services:
     volumes:
       - mysql-data:/var/lib/mysql
 
+  extra_user_setup:
+    image: mysql:latest
+    command: >
+      bash -c "
+      mysql -hmysql -uroot -pmy-secret-pw -e '
+        CREATE DATABASE IF NOT EXISTS info_esp32;
+        CREATE USER IF NOT EXISTS '\''test'\''@'\''%'\'' IDENTIFIED BY '\''abcd1234'\''; 
+        GRANT ALL PRIVILEGES ON info_esp32.* TO '\''test'\''@'\''%'\'';
+      '
+      "
+    depends_on:
+      - mysql
+
 volumes:
   mysql-data:
